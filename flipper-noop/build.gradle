@@ -4,7 +4,7 @@ plugins {
 }
 
 ext {
-    libVersion = "0.50.0"
+    libVersion = "0.50.1"
     groupId = "com.lwjlol"
     artifactId = "flipper-noop"
     pkg_name = "flipper-noop"
@@ -53,6 +53,7 @@ dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
     implementation 'androidx.core:core-ktx:1.3.0'
     implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation "com.squareup.okhttp3:okhttp:4.7.2"
     implementation 'com.google.android.material:material:1.1.0'
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
