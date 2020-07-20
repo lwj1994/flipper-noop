@@ -9,8 +9,8 @@ ext {
     artifactId = "flipper-noop"
     pkg_name = "flipper-noop"
     libraryDescription = 'flipper-noop'
-    siteUrl = 'https://github.com/lwj1994/BottomBar.git'
-    gitUrl = 'https://github.com/lwj1994/BottomBar.git'
+    siteUrl = 'https://github.com/lwj1994/flipper-noop.git'
+    gitUrl = 'https://github.com/lwj1994/flipper-noop.gitgit remote add origin https://github.com/lwj1994/flipper-noop.git'
     developerId = 'wenchieh'
     developerName = 'wenchieh'
     developerEmail = 'alwjlola@gmail.com'
