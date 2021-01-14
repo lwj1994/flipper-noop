@@ -1,18 +1,10 @@
 package com.facebook.flipper.android
 
 import android.content.Context
-import com.facebook.flipper.core.FlipperClient
-import com.facebook.flipper.core.FlipperPlugin
 
 object AndroidFlipperClient {
+    @JvmStatic
+    fun getInstance(context: Context) = NoOpAndroidFlipperClient()
 
-    fun getInstance(context: Context) = object : FlipperClient {
-        override fun addPlugin(plugin: FlipperPlugin) {
-
-        }
-
-        override fun start() {
-        }
-
-    }
+    fun getInstanceIfInitialized() = NoOpAndroidFlipperClient()
 }

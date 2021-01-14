@@ -4,7 +4,7 @@ plugins {
 }
 
 ext {
-    libVersion = "0.50.1"
+    libVersion = "0.70.0"
     groupId = "com.lwjlol"
     artifactId = "flipper-noop"
     pkg_name = "flipper-noop"
