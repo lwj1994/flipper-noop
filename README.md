@@ -3,9 +3,17 @@
 noop dependency for https://github.com/facebook/flipper
 
 
-[ ![Download](https://api.bintray.com/packages/wenchieh/maven/flipper-noop/images/download.svg) ](https://bintray.com/wenchieh/maven/flipper-noop/_latestVersion)
+[![](https://jitpack.io/v/lwj1994/flipper-noop.svg)](https://jitpack.io/#lwj1994/flipper-noop)
 
-## 使用
+## Usage
 ```
-releaseImplementation 'com.lwjlol:flipper-noop:${latestVersion}'
+	allprojects {
+		repositories {
+			...
+			maven { url 'https://jitpack.io' }
+		}
+	}
+
+
+	releaseImplementation 'com.github.lwj1994:flipper-noop:Tag'
 ```
