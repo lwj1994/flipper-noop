@@ -1,34 +1,19 @@
 plugins {
-    id 'com.android.library'
-    id 'kotlin-android'
+    id("com.android.library")
+    id("kotlin-android")
+    id("com.github.dcendents.android-maven")
 }
 
-ext {
-    libVersion = "0.70.0"
-    groupId = "com.lwjlol"
-    artifactId = "flipper-noop"
-    pkg_name = "flipper-noop"
-    libraryDescription = 'flipper-noop'
-    siteUrl = 'https://github.com/lwj1994/flipper-noop.git'
-    gitUrl = 'https://github.com/lwj1994/flipper-noop.gitgit remote add origin https://github.com/lwj1994/flipper-noop.git'
-    developerId = 'wenchieh'
-    developerName = 'wenchieh'
-    developerEmail = 'alwjlola@gmail.com'
-    licenseName = 'The Apache Software License, Version 2.0'
-    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
-    allLicenses = ["Apache-2.0"]
-}
 
 
 android {
     compileSdkVersion 30
-    buildToolsVersion "30.0.0"
-
+    buildFeatures {
+        buildConfig = false
+    }
     defaultConfig {
         minSdkVersion 21
         targetSdkVersion 30
-        versionCode 1
-        versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles "consumer-rules.pro"
@@ -60,4 +45,3 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
 }
 
-apply from: '../deploy.gradle'
